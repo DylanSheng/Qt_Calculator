@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>crapAboutBucky.txt</file>
+    </qresource>
+</RCC>
