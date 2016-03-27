@@ -27,15 +27,22 @@ private slots:
     void on_Cal_9_clicked();
     void on_Cal_0_clicked();
     void on_Cal_calculate_clicked();
-
-    void on_Cal_clear_clicked();
-
     void on_Cal_add_clicked();
     void on_Cal_minus_clicked();
 
     void on_Cal_times_clicked();
 
     void on_Cal_divide_clicked();
+
+    void on_Cal_dot_clicked();
+
+    void on_Cal_cr_clicked();
+
+    void on_Cal_sqrt_clicked();
+
+    void on_Cal_1x_clicked();
+
+    void on_Cal_percentage_clicked();
 
 private:
     Ui::CoolPlayer *ui; //overall interface
@@ -44,8 +51,6 @@ private:
     QString sign;
     bool firstDone = false;
 
-    int ansg = 0;
-    bool flag_add = true;
     void getTextFile();
 };
 
