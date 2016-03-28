@@ -15,7 +15,10 @@ public:
     explicit CoolPlayer(QWidget *parent = 0);  //constructor //has no parent
     ~CoolPlayer();  //deconstructor
 
-private slots:
+protected:
+    void keyPressEvent(QKeyEvent *event);
+    void getInputValue(QString out);
+private slots:  
     void on_Cal_1_clicked();
     void on_Cal_2_clicked();
     void on_Cal_3_clicked();
@@ -49,7 +52,9 @@ private:
     QString inputValue_1;
     QString inputValue_2;
     QString sign;
+
     bool firstDone = false;
+    bool Done = false;
 
     void getTextFile();
 };
